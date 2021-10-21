@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+}
+
+ body{   
+    margin: 0px;
+}
+.header-container{
+    height: 5rem;
+    background-color: rgb(27, 26, 26);
+    display:flex;
+    align-items:center;
+    padding-left: 3rem;
+}
+.header-container>*{
+    background-color: rgb(83, 81, 81);
+    height:65%;
+    border-radius: 6px;  
+}
+.color-group_container{
+    width:40%;
+    margin-right: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* icons are treated as text  */
+.color{
+    height: 50%;
+    width: 13%;
+    border-radius: 4px;
+}
+/* .fa-plus, .fa-times{
+    font-size: 2rem;
+    font-weight: lighter;
+} */
+.pink{
+    background-color:lightpink;
+}
+.blue{
+    background-color:lightblue ;
+}
+.green{
+    background-color: lightgreen;
+}
+.black{
+    background-color: black;
+}
+.add-cross_container, .lock-unlock_container{
+    width:20%;
+    display:flex;
+    margin-right: 1rem;
+}
+.add-cross_container>*, .lock-unlock_container>*{
+    width:50%;
+    height:100%;
+}
+.plus-container, .multiply-container, .lock-container, .unlock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active{
+    background-color: rgb(49, 47, 47)
+}
+.task_input{
+    color: black;
+}
+.tool_icons{
+    font-size:2rem;
+    /* boldness */
+    font-weight:400;
+ }
+.main-container{ 
+    height: calc(100vh - 3.5rem); 
+    background-color: #f2f2f2;
+    padding:4rem;
+    display:flex;
+    justify-content:space-evenly;
+    /* align-items:center; */
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    overflow-y: scroll;
+}
+.task_container{
+    /* border:1px solid black; */
+    background-color:antiquewhite;
+    height: 8rem;
+    width: 13rem;
+}
+.task_main-container{
+    padding:0.5rem;
+    height:6.5rem;
+}
+.task_header{
+    height:0.5rem;
+}
+.task_id{
+    color:grey;
+    font-family: sans-serif;
+    margin: 0.2rem;
+    margin-left: 0px;
+}
+.text{
+    color:black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-y: scroll;
+}
+.text::-webkit-scrollbar {
+    display: none;
+  }
+ 
+.modal{
+height:20rem;
+width:35rem;
+background-color: white;
+/* put it fixed*/
+position: fixed;
+/* center */
+top:calc( 50% - 10rem);
+left: calc( 50% - (35/2)rem);
+display:flex;
+}
+.input_container{
+width:65%;
+/* border: 1px solid black; */
+height:100%;
+padding:2rem;
+/* background-color: red; */
+
+}
+.input_container_text{
+outline: none;
+height:100%;
+width:100%;
+border:none;
+font-size: 1.5rem;
+/* font-weight: 100; */
+font-family: sans-serif; 
+}
+.color_container{
+background-color: #343131;
+height:100%;
+width:35%;
+}
+
+.color_container{
+padding:  1.5rem;
+/* text-align: center; */
+display: flex;
+/* flex direction -> flex for spacing */
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+}
+.color_picker{
+height:3rem;
+width:6rem;
+}
+.selected{
+border: 0.2rem solid white;
+}
+@media only screen and (max-width: 600px) {
+html { font-size: 10px; } 
+}
