@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <!--build:css css/main.css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--endbuild-->
+
+    <title>Task Planner and Organizer: Instructions</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top" style="background-color:rgb(34, 36, 37)">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Task Planner and Organizer</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./home.html"><span class="fa fa-home fa-lg"></span>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span
+                                class="fa fa-code fa-lg"></span> Application</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Instructions</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./feedback.html"><span
+                         class="fa fa-address-card fa-lg"></span> Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jumbotron " style="background:#e9ecef !important">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>Task Planner and Organizer</h1>
+                    <p>This webpage will guide you through on how to use the application</p>
+                </div>
+                <div class="col-12 col-sm">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <ol class="col-12 breadcrumb" style="background-color: rgb(63, 63, 63);">
+                <li class="breadcrumb-item "><a href="./home.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="./index.html">Application</a></li>
+                <li class="breadcrumb-item active" style="color:blanchedalmond">Instructions</li>
+            </ol>
+            <div>
+                <h3>How to use...</h3>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 ">
+                <h2>Opening</h2>
+                <p>Afte opening the webpage application you will see an empty page with various icons on the top</p>
+                <p>These icons represent various functionality of the application. Clicking on each one of them performs
+                    a function.</p>
+            </div>
+            <div class="col-12 col-sm-8">
+                <div class="card">
+                    <h3 class="card-header bg-dark text-white">Main page</h3>
+                    <div class="card-body">
+                        <img src="images/mainPage.PNG" alt="main-Page" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 ">
+                <h2>Color Pallete</h2>
+
+                <div id="accordian">
+                    <div class="card">
+                        <div class='card-header' role="tab" id="colorPallete">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#ColorPallet" data-parnt="accordian">
+                                    Color Pallete <small>For filtering content by color</small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="collapse show" id="ColorPallet">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-sm-8">
+                                        <p class="d-none d-sm-block">Clicking on each color renders the tasks
+                                            corresponding to that color on the screen.</p>
+                                        <p class="d-none d-sm-block">Clicking on the same color icon twice renders the
+                                            webpage to the normal view.</p>
+                                        <p><small>NOTE: If there are no tickets/tasks corresponding to that particular
+                                                color the main page will remain blank.</small></p>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <img src="./images/colorP.PNG" width=100% alt="color pallate">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class='card-header' role="tab" id="plus_cross">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#plus-Cross" data-parnt="accordian">
+                                    Plus-Cross icons <small>To add and delete tickets</small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="collapse " id="plus-Cross">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-sm-8">
+                                        <p class="d-none d-sm-block">The plus icon is used to add new tickets to the
+                                            application.</p>
+                                        <p class="d-none d-sm-block">Selecting and clicking on the tickets on the main
+                                            page deletes the corresponding ticket/task.
+                                            To disable this functionality click on the Cross icon again.</p>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <img src="./images/plusCross.PNG" width="100%" alt="plus-cross-icons">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class='card-header' role="tab" id="lock_unlock">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#lock-unlock" data-parnt="accordian">
+                                    Lock-Unlock icons<small>to enable editing and freezing edit functionality</small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="collapse " id="lock-unlock">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-sm-8">
+                                        <p class="d-none d-sm-block">The lock and unlock icons provide the functionality
+                                            of freaaing and defreezing the tickets/tasks</p>
+                                        <p>When the lock icon is activated, the tickets already present on the main
+                                            screen cannot be edited while when the unlock icon is selected this can be
+                                            done by clicking and consequently editing the desired ticket</p>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <img src="./images/lockUnlock.PNG" width="100%" alt="lock-unlock-icons">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class='card-header' role="tab" id="albertohead">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#alberto" data-parnt="accordian">
+                                    Adding ticket/task area
+                                </a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="collapse " id="alberto">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-sm-8">
+                                        <p class="d-none d-sm-block">On clicking the plus icon, the 'Adding ticket area
+                                            is popped up.</p>
+                                        <p>Click on the color you wnat the task/ticket to be color coded with and type
+                                            your task in the text area and press enter to produce the ticket/task.</p>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <img src="./images/ticketModal.PNG" width="100%" alt="ticket-area-modal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="row row-content">
+
+            <h2>Additional features</h2>
+            <div class=row>
+                <div class="col-12 col-sm-8">
+                    <em>Changing color of tickets:</em>
+                    Each color coded ticket can have its color code changed by clicking on the header color of the
+                    ticket multiple times until the desired color is obtained.
+                    <p>Each ticket also carries a code for unique identification</p>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <img src="./images/ticket.PNG" alt="ticket" width="100%">
+                </div>
+            </div>
+            <div class="col-12 col-sm-3">
+            </div>
+
+        </div>
+    </div>
+
+    <hr><br>
+
+    <footer class="footer " style="background-color: rgb(31, 29, 29);">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2" style="color:antiquewhite">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./index.html">Application</a></li>
+                        <li><a href="./instructions.html">Instructions</a></li>
+                        <li><a href="./feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5" style="color:antiquewhite">
+                    <h5>Our Address</h5>
+                    <address>
+                        121, Heavens Road,<br>
+                        Heaven<br>
+                        USA<br>
+                        <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                        <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                        <i class="fa fa-envelope fa-lg"></i>:
+                        <a href="mailto:lorem@ipsum.net"> lorem@ipsum.net</a>
+
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                                class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                                class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                                class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                </div>
+            </div>
+
+    </footer>
+</body>
+
+</html>

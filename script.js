@@ -15,8 +15,9 @@ let unlockContainer = document.querySelector(".unlock-container");
 let plusContainer = document.querySelector(".plus-container");
 let deleteContainer = document.querySelector(".multiply-container");
 let colorChooser = document.querySelector(".color_container");
-let allCOlorElements = document.querySelectorAll(".color_picker");
+let allColorElements = document.querySelectorAll(".color_picker");
 let modal = document.querySelector(".modal");
+
 
 // event Listeners
 input.addEventListener("keydown", function (e) {
@@ -38,6 +39,7 @@ colorContainer.addEventListener("click", function (e) {
         filterCards(filteredCardColor);
     }
 })
+
 colorChooser.addEventListener("click", function (e) {
     let element = e.target;
     console.log("e.target", element);
@@ -45,15 +47,16 @@ colorChooser.addEventListener("click", function (e) {
         let filteredCardColor = element.classList[1];
         defaultColor = filteredCardColor;
         // border change 
-        for (let i = 0; i < allCOlorElements.length; i++) {
+        for (let i = 0; i < allColorElements.length; i++) {
             // remove  from all
-            allCOlorElements[i].classList.remove("selected");
+            allColorElements[i].classList.remove("selected");
         }
         // add
         element.classList.add("selected")
     }
 })
 
+//for locking
 lockContainer.addEventListener("click", function (e) {
     let numberOFElements = document.querySelectorAll(".task_main-container>div")
     for (let i = 0; i < numberOFElements.length; i++) {
@@ -63,7 +66,7 @@ lockContainer.addEventListener("click", function (e) {
     lockContainer.classList.add("active");
     unlockContainer.classList.remove("active");
 })
-
+//for unlocking
 unlockContainer.addEventListener("click", function (e) {
     let numberOFElements = document.querySelectorAll(".task_main-container>div")
     for (let i = 0; i < numberOFElements.length; i++) {
@@ -73,6 +76,7 @@ unlockContainer.addEventListener("click", function (e) {
     unlockContainer.classList.add("active");
 })
 
+//for deleting container
 deleteContainer.addEventListener("click", function (e) {
     deleteMode = !deleteMode;
     if (deleteMode) {

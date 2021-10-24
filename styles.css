@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
- body{   
+body{   
     margin: 0px;
 }
 .header-container{
@@ -23,6 +23,23 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+.foot{
+    background-color: black;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.footer-children{
+    background-color:#343131;
+    height:80%;
+    width:30%;
+    border-radius: 3px;
+    border: 1px solid gray;
+    text-align: center;
+    padding-top:2px;
+    margin-right:2rem;
 }
 /* icons are treated as text  */
 .color{
@@ -46,6 +63,7 @@
 .black{
     background-color: black;
 }
+
 .add-cross_container, .lock-unlock_container{
     width:20%;
     display:flex;
@@ -61,7 +79,8 @@
     align-items: center;
 }
 .active{
-    background-color: rgb(66, 64, 64)
+    background-color: rgb(66, 64, 64);
+    border-radius:6px;
 }
 .task_input{
     color: black;
@@ -72,7 +91,7 @@
     font-weight:400;
  }
 .main-container{ 
-    height: calc(100vh - 3.5rem); 
+    height: calc(100vh - 4rem - 4rem); 
     background-color: #f2f2f2;
     padding:4rem;
     display:flex;
@@ -159,7 +178,35 @@ width:6rem;
 }
 .selected{
 border: 0.2rem solid white;
+color:#151616
 }
 @media only screen and (max-width: 600px) {
 html { font-size: 10px; } 
 }
+a:link {
+    color: whitesmoke;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightblue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+/* for home page */
+.carousel-control-prev-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23151616' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23151616' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+
