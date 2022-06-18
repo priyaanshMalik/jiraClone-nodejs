@@ -1,2 +1,2 @@
-## a simple jira app clone
+## a simple Task organiser
  
